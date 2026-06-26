@@ -1,0 +1,60 @@
+<svg width="768" height="768" viewBox="0 0 768 768" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="86" y1="83" x2="676" y2="679" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#12081D"/>
+      <stop offset="1" stop-color="#070C1A"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="188" y1="170" x2="585" y2="591" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF4FD8"/>
+      <stop offset="0.48" stop-color="#9B5CFF"/>
+      <stop offset="1" stop-color="#4BD7FF"/>
+    </linearGradient>
+    <linearGradient id="note" x1="214" y1="187" x2="560" y2="591" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF7DD3"/>
+      <stop offset="0.47" stop-color="#A74BFF"/>
+      <stop offset="1" stop-color="#33D9FF"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="174" y1="544" x2="598" y2="544" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F7FAFF"/>
+      <stop offset="0.72" stop-color="#F2F5FA"/>
+      <stop offset="1" stop-color="#38D7FF"/>
+    </linearGradient>
+    <linearGradient id="hubGrad" x1="500" y1="520" x2="612" y2="590" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF5AE0"/>
+      <stop offset="0.5" stop-color="#8E63FF"/>
+      <stop offset="1" stop-color="#33D9FF"/>
+    </linearGradient>
+    <filter id="glow" x="0" y="0" width="768" height="768" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="768" height="768" rx="86" fill="url(#bg)"/>
+  <rect x="32" y="32" width="704" height="704" rx="86" fill="url(#bg)" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+
+  <circle cx="384" cy="278" r="204" stroke="url(#ring)" stroke-width="10" opacity="0.9" filter="url(#glow)"/>
+
+  <path d="M282 232C282 215.43 295.43 202 312 202C328.57 202 342 215.43 342 232V310C342 326.57 328.57 340 312 340C295.43 340 282 326.57 282 310V232Z" fill="url(#note)"/>
+  <path d="M421 214C421 197.43 434.43 184 451 184C467.57 184 481 197.43 481 214V306C481 322.57 467.57 336 451 336C434.43 336 421 322.57 421 306V214Z" fill="url(#note)"/>
+  <path d="M347 324C347 276.56 385.56 238 433 238H490C507.67 238 522 252.33 522 270C522 287.67 507.67 302 490 302H433C420.85 302 411 311.85 411 324V448C411 464.57 397.57 478 381 478C364.43 478 351 464.57 351 448V324Z" fill="url(#note)"/>
+  <path d="M282 444C282 427.43 295.43 414 312 414H330C346.57 414 360 427.43 360 444C360 460.57 346.57 474 330 474H312C295.43 474 282 460.57 282 444Z" fill="url(#note)"/>
+
+  <path d="M204 248H216" stroke="url(#ring)" stroke-width="14" stroke-linecap="round"/>
+  <path d="M178 273H182" stroke="url(#ring)" stroke-width="14" stroke-linecap="round"/>
+  <path d="M562 248H574" stroke="url(#ring)" stroke-width="14" stroke-linecap="round"/>
+  <path d="M586 273H590" stroke="url(#ring)" stroke-width="14" stroke-linecap="round"/>
+
+  <path d="M170 602H598" stroke="rgba(255,255,255,0.08)" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="250" cy="602" r="12" fill="url(#hubGrad)"/>
+  <path d="M316 586V618M300 602H332" stroke="#8E63FF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="384" cy="602" r="34" stroke="url(#hubGrad)" stroke-width="4"/>
+  <path d="M374 586L406 602L374 618V586Z" fill="url(#hubGrad)"/>
+  <path d="M430 602H454" stroke="#33D9FF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M446 586L470 602L446 618" stroke="#33D9FF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="384" y="548" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="500" letter-spacing="8" fill="url(#textGrad)">MELODY<tspan fill="url(#hubGrad)" letter-spacing="6">HUB</tspan></text>
+</svg>
